@@ -5,10 +5,10 @@
 **プロジェクトメンバー：** 長岡、末久、浜崎、小林
 
 **GitHubリポジトリ**  
-長岡：https://github.com/2026-reskill-tech-tbc/personal_dev_13292tnagaoka.git
-末久：https://github.com/2026-reskill-tech-tbc/personal_dev_13285ssuehisa.git
-浜崎：https://github.com/2026-reskill-tech-tbc/personal_dev_13284khamasaki.git
-小林：https://github.com/2026-reskill-tech-tbc/personal_dev_13278dkobayashi.git
+長岡：https://github.com/2026-reskill-tech-tbc/personal_dev_13292tnagaoka.git  
+末久：https://github.com/2026-reskill-tech-tbc/personal_dev_13285ssuehisa.git  
+浜崎：https://github.com/2026-reskill-tech-tbc/personal_dev_13284khamasaki.git  
+小林：https://github.com/2026-reskill-tech-tbc/personal_dev_13278dkobayashi.git  
 
 ---
 
@@ -41,23 +41,6 @@ gantt
     5.1 リハーサル  :e1, 05-27, 1d
     5.2 成果発表会  :e2, after e1, 1d
 ```
----
-## 画面遷移図（サンプル）
-```mermaid
-flowchart TD
-    A[ログイン画面] -->|ログイン成功| B[ダッシュボード]
-    A -->|新規登録リンク| C[ユーザー登録画面]
-    A -->|パスワードを忘れた| D[パスワードリセット画面]
-
-    C -->|登録完了| B
-
-    B -->|プロフィール編集| E[プロフィール編集画面]
-    B -->|ログアウト| A
-
-    D -->|メール送信完了| A
-    E -->|保存| B
-```
----
 ## ER図（サンプル）
 ```mermaid
 erDiagram
