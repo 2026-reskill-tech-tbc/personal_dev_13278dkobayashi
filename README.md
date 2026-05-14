@@ -79,6 +79,8 @@ erDiagram
 classDiagram
     class Account {
         - String name
+        - Integer id
         + setName()
+        + setId()
     }
 ```
