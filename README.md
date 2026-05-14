@@ -71,10 +71,6 @@ erDiagram
         integer user_id
         integer total_price
     }
-
-    USER ||--o{ ORDER : "1対多"
-    ORDER ||--o{ ORDER_PRODUCT : "1対多"
-    PRODUCT ||--o{ ORDER_PRODUCT : "1対多"
 ```
 
 ---
