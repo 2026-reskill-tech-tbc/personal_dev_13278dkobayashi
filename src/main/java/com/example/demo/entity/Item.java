@@ -1,4 +1,6 @@
 package com.example.demo.entity;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,42 +14,55 @@ public class Item {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id; // 商品ID
-
 	private String name; // 商品名
-
 	private Integer price; // 価格
-	
-	private String image;
-	
+	private String image; //画像
+	@Column(name="genre")
+	private Integer genreId; // ジャンルID
 	@Transient // 永続化対象外
-	private Integer quantity;
+	private Integer quantity; // 数量
+	
 
-	public Integer getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
-	}
-
+	// ゲッター
 	public Integer getId() {
 		return id;
 	}
 
-
 	public String getName() {
 		return name;
 	}
-
 	public Integer getPrice() {
 		return price;
 	}
-
+	public Integer getQuantity() {
+		return quantity;
+	}
 	public String getImage() {
 		return image;
 	}
-
+	public Integer getGenreId() {
+		return genreId;
+	}
+	
+	
+	// セッター
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}	
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
 	public void setImage(String image) {
 		this.image = image;
 	}
+	public void setGenreId(Integer genreId) {
+		this.genreId = genreId;
+	}
+	
 }

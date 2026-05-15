@@ -1,0 +1,116 @@
+
+body{
+	background-color: #EFF0F7;
+	text-align: center;
+	min-width: 900px;
+}
+
+header,genre,footer{
+	background-color: #45496a;
+	color: #FFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+header a,genre a{
+	color: #fff;
+}
+
+header h1{
+	font-size: 20pt;
+	margin:10px auto;
+}
+
+
+main{
+	background-color: rgb(255, 255, 255);
+	min-height: 50px;
+	padding: 20px;
+}
+
+table,th,td{
+	border-collapse: collapse;
+	border: 1px solid;
+}
+table{
+	margin:5px auto;
+	min-width: 800px;
+}
+table th{
+	background: #7d8bae;
+	color: #fff;	
+}
+
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.items a{
+	text-decoration: none;
+	color:black;
+}
+
+.items a:hover{
+	color:rgb(255, 128, 0)
+}
+.item {
+	margin: 10px;
+	text-align: center;
+	width: 200px;
+}
+
+.item-image {
+	width: 200px;   
+	height: auto;
+	display: block;
+}
+
+/*.platform-container {*/
+/*	display: flex;*/
+/*	flex-wrap: wrap;*/
+/*	justify-content: center;*/
+/*	gap: 20px;*/
+/*}*/
+
+/*.platform-container table {*/
+/*	min-width: auto;*/
+/*	width: auto;*/
+/*	border: none;*/
+/*}*/
+
+card {
+   width: 300px;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+   font-family: sans-serif;
+}
+
+.cart-image {
+  width: 30px;
+  height: auto; /* 縦横比を維持 */
+}
+
+.btn-logout{
+	color: red;
+}
+.hed {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.genre{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.genre a:hover{
+	color:blue;
+}
+

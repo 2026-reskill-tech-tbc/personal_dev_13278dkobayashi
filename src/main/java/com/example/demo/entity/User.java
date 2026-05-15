@@ -8,10 +8,10 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users")
-public class Account {
+public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id; // 顧客ID
+	private Integer id; // ユーザーID
 
 	private String name; // 名前
 
@@ -21,13 +21,11 @@ public class Account {
 
 	private String email; // メールアドレス
 
-	
-	
 	// コンストラクタ
-	public Account() {
+	public User() {
 	}
 
-	public Account(String name, String address, String password, String email) {
+	public User(String name, String address, String password, String email) {
 		this.name = name;
 		this.address = address;
 		this.password = password;
@@ -38,20 +36,33 @@ public class Account {
 	public Integer getId() {
 		return id;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public String getAddress() {
 		return address;
 	}
-
-	public String getTel() {
+	public String getPassword() {
 		return password;
 	}
-
 	public String getEmail() {
 		return email;
+	}
+
+	// セッター
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }

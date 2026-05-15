@@ -1,19 +1,68 @@
--- カテゴリーテーブルデータ
-INSERT INTO categories(name) VALUES('本');
-INSERT INTO categories(name) VALUES('DVD');
-INSERT INTO categories(name) VALUES('ゲーム');
 -- 商品テーブルデータ
-INSERT INTO items(name, price, image) VALUES('Switch2', 450000, 'switch2-icon.png');
-INSERT INTO items(name, price, image) VALUES('ポケットモンスター赤', 10, 'aaa.jpg');
-
+INSERT INTO items(name, price, image, genre) VALUES('GALLERIA XPR7M-R56T8G-GD Ryzen 7 7700搭載',250000,'galleria1.png',1);
+INSERT INTO items(name, price, image, genre) VALUES('AMD Ryzen 5 プロセッサを搭載したコストパフォーマンスの高い15.6型ノートPC！',200000,'mouse1.jpg',1);
+INSERT INTO items(name, price, image, genre) VALUES('GeForce RTX 5060 Ti / 16GB & Ryzen 7 5700X 搭載',200000,'gtune1.png',1);
+INSERT INTO items(name, price, image, genre) VALUES('GALLERIA FPR7M-R56-W Ryzen 7 7700搭載',280000,'galleria2.png',1);
+INSERT INTO items(name, price, image, genre) VALUES('GeForce RTX 5080 (16GB) & AMD Ryzen 7 9800X3D 搭載',200000,'gtune2.png',1);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) G515 RAPID TKL G515-TKL-RT',15000,'keyboard1.png',2);
+INSERT INTO items(name, price, image, genre) VALUES('東プレ(Topre) REALFORCE GX1',12000,'keyboard2.png',2);
+INSERT INTO items(name, price, image, genre) VALUES('スティールシリーズ(SteelSeries) Apex Pro TKL',20000,'keyboard7.jpg',2);
+INSERT INTO items(name, price, image, genre) VALUES('コルセア(Corsair) ゲーミングキーボード CH-910971E-JP',13000,'keyboard4.png',2);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) PROゲーミングキーボード G-PKB-002LN',20000,'keyboard5.png',2);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) PRO X2 SUPERSTRIKE LIGHTSPEED',200000,'gprox2.jpg',3);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) ゲーミングマウス PRO X SUPERLIGHT 2',15000,'gproxsuperlight2.jpg',3);
+INSERT INTO items(name, price, image, genre) VALUES('FNATIC MOUSE',12000,'fnatic.jpg',3);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) PRO X SUPERLIGHT 2c',20000,'gpro.jpg',3);
+INSERT INTO items(name, price, image, genre) VALUES('Pulsar X3 Mini White',20000,'pulsarx3.png',3);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) PRO X 2 LIGHTSPEED G-PHS-005WL',10000,'iya3.jpg',4);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) ASTRO A50 X LIGHTSPEED A50X',30000,'iya4.jpg',4);
+INSERT INTO items(name, price, image, genre) VALUES('ロジクール(Logicool) ゲーミングヘッドセット G321',15000,'iya5.jpg',4);
+INSERT INTO items(name, price, image, genre) VALUES('レイザー(Razer) KRAKEN V4 RZ04-05170100-R3M1',20000,'iya6.jpg',4);
+INSERT INTO items(name, price, image, genre) VALUES('レイザー(Razer) BLACKSHARK V2 PRO',30000,'iya7.jpg',4);
+INSERT INTO items(name, price, image, genre) VALUES('ベンキュー(BenQ) MOBIUZ ゲーミングモニター EX251',30000,'moni1.jpg',5);
+INSERT INTO items(name, price, image, genre) VALUES('エムエスアイ(MSI) ゲーミングモニター MAG 275CQRF QD E2',40000,'moni2.jpg',5);
+INSERT INTO items(name, price, image, genre) VALUES('エイスース(ASUS) ROG Strix XG259CS-J',35000,'moni3.jpg',5);
+INSERT INTO items(name, price, image, genre) VALUES('アイ・オー・データ(I-O DATA) GigaCrysta ゲーミングモニター KH-GDQ271JA',25000,'moni4.jpg',5);
+INSERT INTO items(name, price, image, genre) VALUES('アイ・オー・データ(I-O DATA) GigaCrysta ゲーミングモニター KH-GDQ271JLAQ',60000,'moni5.jpg',5);
+INSERT INTO items(name, price, image, genre) VALUES('PS5(新品)',50000,'PS5.png',6);
+INSERT INTO items(name, price, image, genre) VALUES('PS5（中古)',25000,'PS5.png',6);
+INSERT INTO items(name, price, image, genre) VALUES('Call of Duty(R) Black Ops7',5000,'ps5soft1.png',7);
+INSERT INTO items(name, price, image, genre) VALUES('SILENT：HILL f',8000,'ps5soft2.png',7);
+INSERT INTO items(name, price, image, genre) VALUES('グランド・セフト・オートV',7000,'ps5soft3.png',7);
+INSERT INTO items(name, price, image, genre) VALUES('ELDEN RING SHADOW OF THE ERDTREE EDITION',6000,'ps5soft4.png',7);
+INSERT INTO items(name, price, image, genre) VALUES('ホグワーツ・レガシー',5000,'ps5soft5.png',7);
+INSERT INTO items(name, price, image, genre) VALUES('PS4(新品)',20000,'PS4.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('PS4（中古)',10000,'PS4.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('PS3（中古)',10000,'PS3.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('SWITCH2(新品)',50000,'SWITCH2.png',8);
+INSERT INTO items(name, price, image, genre) VALUES('SWITCH2（中古)',30000,'SWITCH2.png',8);
+INSERT INTO items(name, price, image, genre) VALUES('十三機兵防衛圏　Nintendo Switch　HAC-P-A3RVA',4000,'switchsoft2.png',9);
+INSERT INTO items(name, price, image, genre) VALUES('LOOPERS Nintendo Switch　HAC-P-A7TSA',6000,'switchsoft3.png',9);
+INSERT INTO items(name, price, image, genre) VALUES('minecraft',10000,'switchsoft4.png',9);
+INSERT INTO items(name, price, image, genre) VALUES('SONIC',5000,'switchsoft5.png',9);
+INSERT INTO items(name, price, image, genre) VALUES('スーパーマリオRPG',3000,'switchsoft6.png',9);
+INSERT INTO items(name, price, image, genre) VALUES('SWITCH(新品)',20000,'SWITCH.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('SWITCH(中古)',10000,'SWITCH.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('Wii(中古)',10000,'Wii.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('WiiU(中古)',1500,'WiiU.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('PSVita(中古)',20000,'PSVita.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('3DS(中古)',20000,'3DS.png',10);
+INSERT INTO items(name, price, image, genre) VALUES('DS(中古)',5000,'DS.png',10);
 -- 顧客テーブルデータ
+INSERT INTO users(name, address, password, email) VALUES('小林大地', '山形県', 'daichi', 'k@daichi.com');
+INSERT INTO users(name, address, password, email) VALUES('加藤純一', '東京都', 'MURASH', 'murash@gaming.com');
 INSERT INTO users(name, address, password, email) VALUES('田中太郎', '東京都', 'himitu', 'tanaka@aaa.com');
 INSERT INTO users(name, address, password, email) VALUES('鈴木一郎', '大阪府', 'himitu', 'suzuki@aaa.com');
--- 注文テーブルデータ
-INSERT INTO orders(user_id, total_price) VALUES(1, 904010);
-INSERT INTO orders(user_id, total_price) VALUES(2, 45000);
--- 注文明細テーブルデータ
-INSERT INTO order_details(order_id, item_id, quantity) VALUES(1, 1, 2);
-INSERT INTO order_details(order_id, item_id, quantity) VALUES(1, 2, 1);
-INSERT INTO order_details(order_id, item_id, quantity) VALUES(1, 4, 1);
-INSERT INTO order_details(order_id, item_id, quantity) VALUES(2, 1, 1);
+-- ジャンルテーブルデータ
+INSERT INTO genres(name) VALUES('ゲーミングpc');
+INSERT INTO genres(name) VALUES('キーボード');
+INSERT INTO genres(name) VALUES('マウス');
+INSERT INTO genres(name) VALUES('ヘッドセット');
+INSERT INTO genres(name) VALUES('モニター');
+INSERT INTO genres(name) VALUES('ps5本体、周辺機器');
+INSERT INTO genres(name) VALUES('ps5 ゲームソフト');
+INSERT INTO genres(name) VALUES('switch2本体、周辺機器');
+INSERT INTO genres(name) VALUES('switch2 ソフト');
+INSERT INTO genres(name) VALUES('その他ゲーム機器');
+
+

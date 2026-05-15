@@ -2,13 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>カート</title>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<header>
-		<h1>ショッピングサイト</h1>
-	</header>
-	<form action="/item"
-	
+	<header th:replace="~{header}"></header>
+	<hr>
+	<main>
+		<div th:replace="cartItem"></div>
+		<form action="/items" method="get">
+			<button>買い物を続ける</button>
+		</form>
+		<br>
+		<form action="/order" method="get">
+			<button>購入手続きへ進む</button>
+		</form>
+		<br> <span th:text="${message}" style="color: red"></span>
+	</main>
+	<hr>
+	<footer th:replace="~{footer}"></footer>
 </body>
 </html>

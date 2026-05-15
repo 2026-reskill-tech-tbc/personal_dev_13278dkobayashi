@@ -1,6 +1,16 @@
+<head>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
 <header>
-	<h1><a href="/items">サンプルショッピング</a></h1>
-	[[${@account.name}]]さん
-	<a href="/user/{id}">設定</a>
-	<a href="/login">ログアウト</a>
+	<h1><a href="/items">ゲームショッピングサイト</a></h1>
+	
+	<nav class="hed">
+	<span th:text="${@account.name}">名前</span>
+	<a th:if="${@account.id == null}" href="/login">ログイン</a>
+	<a th:if="${@account.id != null}" th:href="@{/user/{id}(id=${@account.id})}">設定</a>
+	<a th:if="${@account.id != null}" href="/cart">
+		 <img src="../image/cart.jpeg" alt="カート" class="cart-image">
+	</a>
+	<a th:if="${@account.id != null}" href="/logout" class="btn-logout">ログアウト</a>
+	</nav>
 </header>

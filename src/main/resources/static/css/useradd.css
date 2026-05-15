@@ -1,0 +1,53 @@
+
+
+body {
+  background: linear-gradient(45deg, #45496a,#45489a);
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-add {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input {
+  width: 100%;
+/*  padding: 15px;*/
+  margin:5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  height:auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: black;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a {
+	color:black;
+}

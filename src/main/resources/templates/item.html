@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>商品詳細画面</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 	<header th:replace="~{header}"></header>
+	<hr>
 	<main>
 		
-		<form action="/item" method="get">
-		 <input type="text" name="query" placeholder="検索キーワードを入力">
-		 <button type="submit">検索</button>
-		</form>
-		<a href="/cart">カートを見る</a>
-		<table border="1">
-			<tr>
-				<th>商品名</th>
-				<th>値段</th>
-				<th>image</th>
-			</tr>
-			<tr th:each="item:${items}">
-				<td th:text="${item.name}"></td>
-				<td th:text="${item.price}"></td>
-				<td><img src="${item.img}" alt="画像"></td>
-				
-			</tr>
-			
-		</table>
+		
+		<article>
+			<img th:src="${item.image}" alt="商品画像" style="max-width: 240px; width: 100%;">
+			<p th:text="'値段：¥' + ${item.price}">
+				<form action="/cart/add" method="post">
+					<input type="hidden" name="itemId" th:value="${item.id}">
+					<button th:if="${@account.id != null}">カートに追加する</button>
+				</form>
+				<form action="/login" method="get">
+					<button th:if="${@account.id == null}">カートに追加する(ログインが必要です)</button>
+				</form>
+				<a href="/items">戻る</a>
+		</article>
+		
 	</main>
+	<hr>
+	<footer th:replace="~{footer}"></footer>
 </body>
+
 </html>

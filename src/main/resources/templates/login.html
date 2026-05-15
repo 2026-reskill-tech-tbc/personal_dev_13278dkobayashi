@@ -3,19 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>ログイン</title>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-	<header>
-		<h1>ゲームショッピング</h1>
-	</header>
+
+	
 	<main>
-		<form action="/login" method="post">
-			<input type="text" name="name" placeholder="名前">
-			<input type="text" name="password" placeholder="パスワード">
-			<button>ログイン</button>
-			<br> <span th:text="${message}" style="color: red"></span>
-		</form>
+		<div class="login-container">
+			<div class="form-group">
+				<form action="/login" method="post">
+				<input type="text" name="name" placeholder="名前" th:value="${name}">
+			</div>
+			<div class="form-group">
+				<input type="password" name="password" placeholder="パスワード" th:value="${password}">
+			</div>
+				<button>ログイン</button><br>
+				<span th:text="${message}" style="color: red"></span>
+				</form>
+			<div class="login-link">
+			<a href="/user/add">新規登録</a><br>
+			<a href="/items">登録せずに閲覧する</a>
+			</div>
+		</div>
 	</main>
 </body>
 </html>

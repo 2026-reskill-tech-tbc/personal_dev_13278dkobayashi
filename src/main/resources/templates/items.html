@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>商品一覧</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<section id="no1"></section>
+	<header th:replace="~{header}"></header>
+<br>
+		<nav class="genre">
+			<a href="/items">全商品</a>
+			<a th:each="genre:${genres}"
+			   th:href="@{items(genreId=${genre.id})}"
+			   th:text="${genre.name}"
+			   Style="margin-right:5px;"></a>
+		</nav>
+	<br>
+		<form action="/items" method="get">
+			<input type="text" name="keyword" th:value="${keyword}" placeholder="商品名">
+			<input type="number" name="maxPrice" th:value="${maxPrice}" placeholder="価格">円以下
+			<button type="submit">検索</button>
+		</form>
+	<br>
+	<main>
+		<div class="items">
+			<div class="item" th:each="item : ${items}">
+				<a th:href="@{/items/{id}(id=${item.id})}">
+					<img th:src="${item.image}" alt="商品画像" class="item-image">
+				</a>				
+				<a th:href="@{/items/{id}(id=${item.id})}">
+				<h2 th:text="${item.name}">商品名</h2>
+				</a>
+				<p th:text="'¥' + ${item.price}">値段</p>
+			</div>
+		</div>
+		<a href="#no1">ページのトップへ戻る</a>
+	</main>
+	<footer th:replace="~{footer}"></footer>
+</body>
+
+</html>
