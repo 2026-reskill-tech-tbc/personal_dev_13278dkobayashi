@@ -9,7 +9,7 @@
 	<header th:replace="~{header}"></header>
 	<main>
 		<h2>アカウント情報編集</h2>
-		<div th:if="${message}" style="color: green;">
+		<div th:if="${message}" style="color: red;">
 			<p th:text="${message}"></p>
 		</div>
 		<form th:action="@{/user/{id}/update(id=${user.id})}" method="post">

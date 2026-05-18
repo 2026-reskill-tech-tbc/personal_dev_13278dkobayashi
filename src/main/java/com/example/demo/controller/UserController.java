@@ -101,7 +101,7 @@ public class UserController {
 		user.setEmail(email);
 		userRepository.save(user);
 		model.addAttribute("user", user);
-		model.addAttribute("message", "アカウント情報が更新されました。");
+		model.addAttribute("message", "更新しました。");
 		return "userDetail";
 	}
 

@@ -49,8 +49,6 @@ INSERT INTO items(name, price, image, genre) VALUES('PSVita(中古)',20000,'PSVi
 INSERT INTO items(name, price, image, genre) VALUES('3DS(中古)',20000,'3DS.png',10);
 INSERT INTO items(name, price, image, genre) VALUES('DS(中古)',5000,'DS.png',10);
 -- 顧客テーブルデータ
-INSERT INTO users(name, address, password, email) VALUES('小林大地', '山形県', 'daichi', 'k@daichi.com');
-INSERT INTO users(name, address, password, email) VALUES('加藤純一', '東京都', 'MURASH', 'murash@gaming.com');
 INSERT INTO users(name, address, password, email) VALUES('田中太郎', '東京都', 'himitu', 'tanaka@aaa.com');
 INSERT INTO users(name, address, password, email) VALUES('鈴木一郎', '大阪府', 'himitu', 'suzuki@aaa.com');
 -- ジャンルテーブルデータ
